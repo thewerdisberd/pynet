@@ -10,7 +10,7 @@ Network clients written in python, used to view the raw data sent by servers to 
 # Usage:
 Pynet is intended to be imported into other programs as a class. However support has been added to run pynet as a standalone program.
 
-pynet.py -c <client type> -h <host> -p <port> [-u <uri> -d <data>]
+pynet.py -c client type -h host -p port [-u uri -d data]
 * When using dns clients, use the -h argument for the query
 
 Available Client Types:
