@@ -111,7 +111,7 @@ if __name__ == "__main__":
         elif opt == "-d":
             data = arg
         elif opt == "--help":
-            print("Usage:\n\tpynet.py -c <client type> -h <host> -p <port> [-u <uri> -d <data file>]")
+            print("Usage:\n\tpynet.py -c <client type> -h <host> -p <port> [-u <uri> -d <data>]")
 
     # Run selected client
     if client_type == "tcp_client":
@@ -133,6 +133,6 @@ if __name__ == "__main__":
         hostname = pynet.rdns_client(host)
         print(hostname)
     else:
-        print("[!]\tInvalid client_type, following arguments supported: tcp_client, udp_client, http_get, http_post")
+        print("[!]\tInvalid client_type, following arguments supported: tcp_client, udp_client, http_get, http_post, fdns_client, rdns_client")
 
     sys.exit("Exiting pynet.py...")
